@@ -1897,6 +1897,17 @@ section::before,section::after{content:none!important;display:none!important;}
 #program .prog-tabs{margin-bottom:1.1rem;}
 @media(max-width:600px){#program{padding-top:1.8rem;padding-bottom:2.2rem;}}
 </style>
+<style id="larger-title-half-width-intro">
+/* Full title remains plain bold text on one line. */
+header .symposium-title{white-space:nowrap!important;max-width:none!important;font-size:1.25rem!important;font-weight:700;}
+header .symposium-brand{flex-shrink:0;}
+header .nav-inner{max-width:1440px;}
+/* Only the introductory paragraphs become narrower; the schedule retains its width. */
+#program .program-intro{width:66%;max-width:66%;margin-left:0;margin-right:0;}
+@media(max-width:1250px){header .nav-toggle{display:block;}header .nav-links{display:none;position:absolute;top:100%;left:0;right:0;margin:0;padding:1.2rem;flex-direction:column;background:#f4f0e3;transform:none;}header .nav-links.open{display:flex;}header .registration-cta{margin-left:auto;}header .symposium-title{font-size:clamp(.65rem,1.8vw,1.25rem)!important;}}
+@media(max-width:760px){#program .program-intro{width:100%;max-width:100%;}}
+@media(max-width:600px){header .symposium-title{font-size:clamp(.5rem,2.65vw,.95rem)!important;}}
+</style>
 </head>
 <body>
 <!-- ===================== NAV ===================== -->
