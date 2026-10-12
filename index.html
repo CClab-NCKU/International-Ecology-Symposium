@@ -1871,6 +1871,23 @@ section::before,section::after{content:none!important;display:none!important;}
 #program .program-intro p{max-width:none;}
 .symposium-brand{cursor:default;}
 </style>
+<style id="single-line-desktop-fixes">
+/* Keep the navigation title on one line when desktop space permits. */
+@media (min-width: 1100px) {
+  .symposium-title { max-width: none; white-space: nowrap; font-size: clamp(.75rem, 1.05vw, 1rem); }
+  .symposium-brand { flex-shrink: 0; }
+  .nav-inner { gap: clamp(.5rem, 1.2vw, 1.5rem); }
+  .nav-links { gap: clamp(.55rem, 1.3vw, 1.7rem); }
+}
+/* Give the Scientific Sessions column more space and prevent individual session wraps. */
+@media (min-width: 1100px) {
+  #about .about-grid { grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 1.5rem; }
+  #about .facts .about-session-list { font-size: clamp(.72rem, .92vw, .91rem); }
+  #about .facts .about-session-list span { white-space: nowrap; }
+  #about .facts .about-venue small { white-space: normal; overflow-wrap: break-word; }
+}
+/* Smaller screens retain natural wrapping so no content overflows. */
+</style>
 </head>
 <body>
 <!-- ===================== NAV ===================== -->
