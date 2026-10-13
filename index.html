@@ -1909,6 +1909,13 @@ header .nav-inner{max-width:1440px;}
 @media(max-width:600px){header .symposium-title{font-size:clamp(.5rem,2.65vw,.95rem)!important;}}
 </style>
 <style id="lighter-program-background">body #program{background:#faf9f3!important;}</style>
+<style id="aligned-program-time-columns">
+#program .prog-day .slot{display:grid!important;grid-template-columns:140px minmax(0,1fr)!important;column-gap:1.25rem!important;padding:1rem 1.25rem!important;align-items:start;}
+#program .prog-day>.slot{border-left:1px solid transparent;border-right:1px solid transparent;}
+#program .prog-day>.student-sharing{border-left:1px solid #cdb5cf;box-shadow:inset 3px 0 #866389;}
+#program .slot-time{text-align:left!important;font-family:var(--body)!important;font-variant-numeric:tabular-nums lining-nums;font-feature-settings:"tnum";white-space:nowrap;}
+@media(max-width:600px){#program .prog-day .slot{grid-template-columns:106px minmax(0,1fr)!important;column-gap:.7rem!important;padding:.9rem .85rem!important;}#program .slot-time{font-size:.85rem!important;}}
+</style>
 </head>
 <body>
 <!-- ===================== NAV ===================== -->
@@ -2011,7 +2018,7 @@ header .nav-inner{max-width:1440px;}
 <div class="slot talk"><div class="slot-time">16:40–17:00</div><div class="slot-body"><h4>Prof. Miroslav Kolařík</h4></div></div>
 <div class="slot talk"><div class="slot-time">17:00–17:20</div><div class="slot-body"><h4>Prof. Yin-Tse Huang</h4></div></div>
 </div>
-<div class="slot "><div class="slot-time">18:00–</div><div class="slot-body"><h4>Banquet – A Sha Restaurant</h4></div></div>
+<div class="slot "><div class="slot-time">18:00–</div><div class="slot-body"><h4>Banquet – A Sha Restaurant (By Invitation Only)</h4></div></div>
 </div>
 <div class="prog-day" data-day="2"><h3 class="agenda-day-title">Thursday, November 5, 2026</h3>
 <div class="agenda-session-block session-3">
@@ -2033,7 +2040,7 @@ header .nav-inner{max-width:1440px;}
 <div class="slot break"><div class="slot-time">14:30–15:00</div><div class="slot-body"><h4>Coffee Break</h4></div></div>
 <div class="slot "><div class="slot-time">15:00–16:00</div><div class="slot-body"><h4>NCKU Campus Tour</h4></div></div>
 <div class="slot "><div class="slot-time">16:00–18:00</div><div class="slot-body"><h4>Free Time</h4></div></div>
-<div class="slot "><div class="slot-time">18:00–</div><div class="slot-body"><h4>Banquet – Yonlin Restaurant</h4></div></div>
+<div class="slot "><div class="slot-time">18:00–</div><div class="slot-body"><h4>Banquet – Yonlin Restaurant (By Invitation Only)</h4></div></div>
 </div>
 </div>
 </section>
