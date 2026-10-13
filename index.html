@@ -1916,6 +1916,13 @@ header .nav-inner{max-width:1440px;}
 #program .slot-time{text-align:left!important;font-family:var(--body)!important;font-variant-numeric:tabular-nums lining-nums;font-feature-settings:"tnum";white-space:nowrap;}
 @media(max-width:600px){#program .prog-day .slot{grid-template-columns:106px minmax(0,1fr)!important;column-gap:.7rem!important;padding:.9rem .85rem!important;}#program .slot-time{font-size:.85rem!important;}}
 </style>
+<style id="registration-fee-lunch-info">
+.registration-header-group{display:flex;flex-direction:column;align-items:center;gap:.35rem;flex-shrink:0;}
+.registration-benefits{font-family:var(--body);font-size:.7rem;font-weight:500;line-height:1.25;color:#143f43;white-space:nowrap;}
+header .nav-inner{min-height:88px;height:auto;padding-block:.6rem;}
+@media(max-width:1250px){header .registration-header-group{margin-left:auto;}header .registration-header-group .registration-cta{margin-left:0;}}
+@media(max-width:600px){header .registration-header-group{order:2;width:100%;margin-left:0;}header .registration-header-group .registration-cta{width:100%;}.registration-benefits{font-size:.75rem;}}
+</style>
 </head>
 <body>
 <!-- ===================== NAV ===================== -->
@@ -1930,7 +1937,10 @@ header .nav-inner{max-width:1440px;}
 <a href="#speakers">Speakers</a>
 <a href="#venue">Venue</a>
 </nav>
+<div class="registration-header-group">
 <a class="registration-cta" href="https://docs.google.com/forms/d/e/1FAIpQLScKE7oyT-BpNr8vEML_YfkeR9sJHryFR-scnXdOU3JoF7AWhg/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">Registration <span aria-hidden="true">↗</span></a>
+<span class="registration-benefits">Free Registration · Lunch Provided</span>
+</div>
 <button aria-expanded="false" aria-label="Toggle menu" class="nav-toggle" id="navToggle">
 <span></span>
 <span></span>
@@ -1965,6 +1975,7 @@ header .nav-inner{max-width:1440px;}
 <div><dt>Venue</dt><dd class="about-venue">Guo Shide Lecture Hall (891S3)<small>1F, South Building, Life Science Building, Li-Hsing Campus, National Cheng Kung University (NCKU)</small></dd></div>
 <div><dt>Working language</dt><dd>English</dd></div>
 <div><dt>Scientific sessions</dt><dd class="about-session-list"><span>Session 1 · Marine &amp; Aquatic Ecology</span><span>Session 2 · Ecology, Evolution &amp; Biological Interactions</span><span>Session 3 · Biodiversity, Climate Change &amp; Ecological Modelling</span></dd></div>
+<div><dt>Registration</dt><dd>Free of charge.<small>Lunch is provided for registered participants.</small></dd></div>
 </dl>
 </div>
 </div>
