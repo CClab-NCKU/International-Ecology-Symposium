@@ -1923,7 +1923,28 @@ header .nav-inner{min-height:88px;height:auto;padding-block:.6rem;}
 @media(max-width:1250px){header .registration-header-group{margin-left:auto;}header .registration-header-group .registration-cta{margin-left:0;}}
 @media(max-width:600px){header .registration-header-group{order:2;width:100%;margin-left:0;}header .registration-header-group .registration-cta{width:100%;}.registration-benefits{font-size:.75rem;}}
 </style>
-<link rel="preload" as="image" href="images/image-01.webp?v=20261013-webp-fast" fetchpriority="high">
+<style>
+/* Center the faces in the updated speaker photographs. */
+#speakers .spk-photo:has(img[alt="Portrait of Haruka Yamazaki"]),
+#speakers .spk-photo:has(img[alt="Portrait of Chao-Li Huang"]) { position:relative; }
+#speakers .spk-photo img[alt="Portrait of Haruka Yamazaki"] {
+ position:absolute; width:125%; height:125%; max-width:none;
+ left:-22.5%; top:-5%; object-fit:cover; object-position:50% 70%!important;
+ transform:none!important;
+}
+#speakers .spk-photo img[alt="Portrait of Chao-Li Huang"] {
+ position:absolute; width:180%; height:180%; max-width:none;
+ left:-12%; top:-26%; object-fit:cover; object-position:0% 50%!important;
+ transform:none!important;
+}
+</style>
+<style>
+#program .slot.talk .slot-body h4 { font-weight:700; }
+#program .slot.talk .slot-body .talk-title {
+ margin:.3rem 0 0; font-size:.9rem; font-weight:400;
+ line-height:1.55; color:#425b59; text-align:left;
+}
+</style>
 </head>
 <body>
 <!-- ===================== NAV ===================== -->
@@ -1952,7 +1973,7 @@ header .nav-inner{min-height:88px;height:auto;padding-block:.6rem;}
 <section class="hero" id="top">
 <h1 class="sr-only">International Symposium on Interdisciplinary Ecology, National Cheng Kung University, Tainan, 4–5 November 2026</h1>
 <div class="hero-banner-wrap">
-<img alt="International Symposium on Interdisciplinary Ecology — November 4–5, 2026, National Cheng Kung University, Tainan, Taiwan." class="hero-art hero-poster-banner" src="images/image-01.webp?v=20261013-webp-fast" loading="eager" fetchpriority="high" decoding="async" width="2400" height="1077">
+<img alt="International Symposium on Interdisciplinary Ecology — November 4–5, 2026, National Cheng Kung University, Tainan, Taiwan." class="hero-art hero-poster-banner" src="images/image-01.webp?v=20261013-1634"/>
 </div>
 </section>
 <!-- ===================== ABOUT ===================== -->
@@ -1964,7 +1985,7 @@ header .nav-inner{min-height:88px;height:auto;padding-block:.6rem;}
 </div>
 <div class="about-grid">
 <div class="about">
-<p>The International Symposium on Interdisciplinary Ecology is jointly organized by the College of Bioscience and Biotechnology, the Department of Life Sciences, the Department of Biotechnology and Bioindustry Sciences, and the Institute of Tropical Plant Sciences and Microbiology at National Cheng Kung University (NCKU).</p>
+<p>The International Symposium on Interdisciplinary Ecology is jointly organized by the College of Bioscience and Biotechnology, Department of Life Sciences, Department of Biotechnology and Bioindustry Sciences, and Institute of Tropical Plant Sciences and Microbiology at National Cheng Kung University (NCKU).</p>
 <p>The symposium brings together researchers from diverse ecological fields to exchange ideas, share research insights, and foster interdisciplinary and international collaboration.</p>
 <p>Beyond scientific exchange, the event aims to strengthen the College’s global research partnerships while providing students with opportunities to engage with international scholars, explore scientific career pathways, and broaden their global perspectives.</p>
 <p>Through these interactions, we hope to inspire future scientists and build lasting connections across disciplines and borders.</p>
@@ -2001,32 +2022,32 @@ header .nav-inner{min-height:88px;height:auto;padding-block:.6rem;}
 <div class="slot "><div class="slot-time">09:00–09:10</div><div class="slot-body"><h4>Opening Remarks</h4><p>Dean: Prof. Ju-Ming Wang · Vice Dean: Prof. I-Ching Chen</p></div></div>
 <div class="agenda-session-block session-1">
 <div class="agenda-session"><h3>Session 1 · Marine &amp; Aquatic Ecology</h3><p class="agenda-moderator">Moderator: Prof. Cheng-Han Tsai</p></div>
-<div class="slot talk"><div class="slot-time">09:10–09:30</div><div class="slot-body"><h4>Dr. Marc Fernández Morrón</h4></div></div>
+<div class="slot talk"><div class="slot-time">09:10–09:30</div><div class="slot-body"><h4>Dr. Marc Fernández Morrón</h4><p class="talk-title">Oceanic Islands as Seasonal Aggregation Sites for Cetaceans</p></div></div>
 <div class="slot talk"><div class="slot-time">09:30–09:50</div><div class="slot-body"><h4>Prof. Hao-Ven Wang</h4></div></div>
-<div class="slot talk"><div class="slot-time">09:50–10:10</div><div class="slot-body"><h4>Prof. Yoonja Kang</h4></div></div>
+<div class="slot talk"><div class="slot-time">09:50–10:10</div><div class="slot-body"><h4>Prof. Yoonja Kang</h4><p class="talk-title">Phytoplankton bloom dynamics under climate change</p></div></div>
 <div class="slot talk"><div class="slot-time">10:10–10:30</div><div class="slot-body"><h4>Prof. Cheng-Han Tsai</h4></div></div>
 </div>
 <div class="slot break"><div class="slot-time">10:30–10:50</div><div class="slot-body"><h4>Coffee Break</h4></div></div>
 <div class="agenda-session-block session-1">
 <div class="agenda-session"><h3>Session 1 · Marine &amp; Aquatic Ecology</h3><p class="agenda-moderator">Moderator: Prof. Cheng-Han Tsai</p></div>
-<div class="slot talk"><div class="slot-time">10:50–11:10</div><div class="slot-body"><h4>Prof. Tsyr-Huei Chiou</h4></div></div>
-<div class="slot talk"><div class="slot-time">11:10–11:30</div><div class="slot-body"><h4>Prof. Martin How</h4></div></div>
-<div class="slot talk"><div class="slot-time">11:30–11:50</div><div class="slot-body"><h4>Prof. Hsiao-Pei Lu</h4></div></div>
+<div class="slot talk"><div class="slot-time">10:50–11:10</div><div class="slot-body"><h4>Prof. Tsyr-Huei Chiou</h4><p class="talk-title">Machine learning assisted intertidal rocky shore biodiversity data acquisition</p></div></div>
+<div class="slot talk"><div class="slot-time">11:10–11:30</div><div class="slot-body"><h4>Prof. Martin How</h4><p class="talk-title">Visual ecology of marine invertebrates</p></div></div>
+<div class="slot talk"><div class="slot-time">11:30–11:50</div><div class="slot-body"><h4>Prof. Hsiao-Pei Lu</h4><p class="talk-title">The Unseen Majority: Decoding Marine Plankton Diversity Through Universal DNA Barcoding</p></div></div>
 </div>
 <div class="slot break"><div class="slot-time">11:50–13:00</div><div class="slot-body"><h4>Lunch</h4></div></div>
 <div class="slot student-sharing"><div class="slot-time">13:00–14:00</div><div class="slot-body"><h4>Science Career Sharing (For Students)</h4><p>Moderator: Prof. I-Ching Chen</p></div></div>
 <div class="slot student-sharing"><div class="slot-time">14:00–15:00</div><div class="slot-body"><h4>Field Fun Time Sharing (For Students)</h4><p>Moderator: Prof. I-Ching Chen</p></div></div>
 <div class="agenda-session-block session-2">
 <div class="agenda-session"><h3>Session 2 · Ecology, Evolution &amp; Biological Interactions</h3><p class="agenda-moderator">Moderator: Prof. Chao-Li Huang</p></div>
-<div class="slot talk"><div class="slot-time">15:00–15:20</div><div class="slot-body"><h4>Prof. Courtney Fitzpatrick</h4></div></div>
-<div class="slot talk"><div class="slot-time">15:20–15:40</div><div class="slot-body"><h4>Prof. Justin Yeh</h4></div></div>
+<div class="slot talk"><div class="slot-time">15:00–15:20</div><div class="slot-body"><h4>Prof. Courtney Fitzpatrick</h4><p class="talk-title">The function and evolution of breeding color in a female lizard</p></div></div>
+<div class="slot talk"><div class="slot-time">15:20–15:40</div><div class="slot-body"><h4>Prof. Justin Yeh</h4><p class="talk-title">The Cultural Evolution of Prestige and Credibility</p></div></div>
 </div>
 <div class="slot break"><div class="slot-time">15:40–16:00</div><div class="slot-body"><h4>Coffee Break</h4></div></div>
 <div class="agenda-session-block session-2">
 <div class="agenda-session"><h3>Session 2 · Ecology, Evolution &amp; Biological Interactions</h3><p class="agenda-moderator">Moderator: Prof. Yin-Tse Huang</p></div>
-<div class="slot talk"><div class="slot-time">16:00–16:20</div><div class="slot-body"><h4>Prof. Kian Mau Goh</h4></div></div>
+<div class="slot talk"><div class="slot-time">16:00–16:20</div><div class="slot-body"><h4>Prof. Kian Mau Goh</h4><p class="talk-title">Microbial Dark Matter in Ecology: What Can Metagenome-Assembled Genomes Really Tell Us?</p></div></div>
 <div class="slot talk"><div class="slot-time">16:20–16:40</div><div class="slot-body"><h4>Prof. Chao-Li Huang</h4></div></div>
-<div class="slot talk"><div class="slot-time">16:40–17:00</div><div class="slot-body"><h4>Prof. Miroslav Kolařík</h4></div></div>
+<div class="slot talk"><div class="slot-time">16:40–17:00</div><div class="slot-body"><h4>Prof. Miroslav Kolařík</h4><p class="talk-title">GlobalFungi.com: a new era in fungal biogeography and ecology</p></div></div>
 <div class="slot talk"><div class="slot-time">17:00–17:20</div><div class="slot-body"><h4>Prof. Yin-Tse Huang</h4></div></div>
 </div>
 <div class="slot "><div class="slot-time">18:00–</div><div class="slot-body"><h4>Banquet – A Sha Restaurant (By Invitation Only)</h4></div></div>
@@ -2034,18 +2055,18 @@ header .nav-inner{min-height:88px;height:auto;padding-block:.6rem;}
 <div class="prog-day" data-day="2"><h3 class="agenda-day-title">Thursday, November 5, 2026</h3>
 <div class="agenda-session-block session-3">
 <div class="agenda-session"><h3>Session 3 · Biodiversity, Climate Change &amp; Ecological Modelling</h3><p class="agenda-moderator">Moderator: Prof. Takefumi Nakazawa</p></div>
-<div class="slot talk"><div class="slot-time">09:30–09:50</div><div class="slot-body"><h4>Prof. Takefumi Nakazawa</h4></div></div>
+<div class="slot talk"><div class="slot-time">09:30–09:50</div><div class="slot-body"><h4>Prof. Takefumi Nakazawa</h4><p class="talk-title">Theory meets natural history: Bringing individuals back into community ecology</p></div></div>
 <div class="slot talk"><div class="slot-time">09:50–10:10</div><div class="slot-body"><h4>Prof. Michio Kondoh</h4></div></div>
 <div class="slot talk"><div class="slot-time">10:10–10:30</div><div class="slot-body"><h4>Prof. Masato Yamamichi</h4></div></div>
-<div class="slot talk"><div class="slot-time">10:30–10:50</div><div class="slot-body"><h4>Dr. Haruka Yamazaki</h4></div></div>
-<div class="slot talk"><div class="slot-time">10:50–11:10</div><div class="slot-body"><h4>Prof. Volker Rudolf</h4></div></div>
+<div class="slot talk"><div class="slot-time">10:30–10:50</div><div class="slot-body"><h4>Dr. Haruka Yamazaki</h4><p class="talk-title">Navigation to nectar source in tiny flower-visiting fruit flies</p></div></div>
+<div class="slot talk"><div class="slot-time">10:50–11:10</div><div class="slot-body"><h4>Prof. Volker Rudolf</h4><p class="talk-title">Climate extremes reshape the temporal structure of seasonal communities</p></div></div>
 </div>
 <div class="slot student-sharing"><div class="slot-time">11:10–13:10</div><div class="slot-body"><h4>Scholar Exchange &amp; Lunch</h4></div></div>
 <div class="agenda-session-block session-3">
 <div class="agenda-session"><h3>Session 3 · Biodiversity, Climate Change &amp; Ecological Modelling</h3><p class="agenda-moderator">Moderator: Prof. I-Ching Chen</p></div>
 <div class="slot talk"><div class="slot-time">13:10–13:30</div><div class="slot-body"><h4>Prof. Yong-Jin Huang</h4></div></div>
-<div class="slot talk"><div class="slot-time">13:30–13:50</div><div class="slot-body"><h4>Dr. Mindaugas Dagys</h4></div></div>
-<div class="slot talk"><div class="slot-time">13:50–14:10</div><div class="slot-body"><h4>Prof. Martino Malerba</h4></div></div>
+<div class="slot talk"><div class="slot-time">13:30–13:50</div><div class="slot-body"><h4>Dr. Mindaugas Dagys</h4><p class="talk-title">Integrating surveys, tracking and long term monitoring to identify key habitats and threats for migratory birds</p></div></div>
+<div class="slot talk"><div class="slot-time">13:50–14:10</div><div class="slot-body"><h4>Prof. Martino Malerba</h4><p class="talk-title">Agricultural ponds: Australia’s hidden nature-based solution?</p></div></div>
 <div class="slot talk"><div class="slot-time">14:10–14:30</div><div class="slot-body"><h4>Prof. I-Ching Chen</h4></div></div>
 </div>
 <div class="slot break"><div class="slot-time">14:30–15:00</div><div class="slot-body"><h4>Coffee Break</h4></div></div>
@@ -2122,7 +2143,7 @@ header .nav-inner{min-height:88px;height:auto;padding-block:.6rem;}
 <span class="flag">Japan · Session 3</span>
 </div>
 <div class="spk">
-<div class="spk-photo"><img loading="lazy" decoding="async" alt="Portrait of Haruka Yamazaki" src="images/image-10.webp"/></div>
+<div class="spk-photo"><img loading="lazy" decoding="async" alt="Portrait of Haruka Yamazaki" src="images/image-10.webp?v=20261021-centered"/></div>
 <h4>Haruka Yamazaki</h4>
 <p>University of Tsukuba</p>
 <span class="flag">Japan · Session 3</span>
@@ -2186,7 +2207,7 @@ header .nav-inner{min-height:88px;height:auto;padding-block:.6rem;}
 <span class="flag">Taiwan · Session 2</span>
 </div>
 <div class="spk">
-<div class="spk-photo portrait-smaller"><img loading="lazy" decoding="async" alt="Portrait of Chao-Li Huang" src="images/image-20.webp"/></div>
+<div class="spk-photo portrait-smaller"><img loading="lazy" decoding="async" alt="Portrait of Chao-Li Huang" src="images/image-20.webp?v=20261021-centered"/></div>
 <h4>Chao-Li Huang</h4>
 <p>National Cheng Kung University</p>
 <span class="flag">Taiwan · Session 2</span>
