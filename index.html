@@ -1956,6 +1956,35 @@ header .registration-cta { flex-direction:column; gap:.25rem; }
 header .registration-cta .registration-button-label { font-size:inherit; font-weight:700; }
 header .registration-cta .registration-button-deadline { display:block; font-size:.72rem; font-weight:500; line-height:1.3; }
 </style>
+<style id="career-notice-and-michio-adjustments">
+.career-announcement {
+ background:#eee4ef; color:#665768;
+ border:1px solid #cdb5cf; border-left:4px solid #866389;
+ border-radius:10px; width:calc(100% - 3rem); max-width:1180px;
+ margin:1rem auto; box-sizing:border-box;
+}
+.career-announcement strong { color:#69456d; }
+#speakers .spk-photo:has(img[alt="Portrait of Michio Kondoh"]) {
+ position:relative; isolation:isolate;
+}
+#speakers .spk-photo:has(img[alt="Portrait of Michio Kondoh"])::before {
+ content:""; position:absolute; inset:-8px; z-index:-1;
+ background:url("images/image-08.webp") center/cover no-repeat; filter:blur(5px);
+}
+#speakers .spk-photo.portrait-smaller img[alt="Portrait of Michio Kondoh"] {
+ transform:scale(.92)!important; transform-origin:center; border-radius:0;
+}
+@media(max-width:600px) { .career-announcement { width:calc(100% - 2rem); } }
+</style>
+<style id="full-width-career-announcement">
+.hero .career-announcement {
+ width:100%; max-width:none; margin:0;
+ border:0; border-radius:0; box-shadow:none;
+ background:#eee4ef; color:#665768;
+}
+.hero .career-announcement strong { color:#69456d; }
+</style>
+<style>.venue-floorplan{margin:2rem 0 0;width:100%;}.venue-floorplan img{display:block;width:100%;max-width:100%;height:auto;}</style>
 </head>
 <body>
 <!-- ===================== NAV ===================== -->
@@ -2264,6 +2293,7 @@ header .registration-cta .registration-button-deadline { display:block; font-siz
 <div class="map-cta"><span class="addr">Li-Hsing Campus · NCKU</span><span class="map-open">Open in Google Maps ↗</span></div>
 </a>
 </div>
+<figure class="venue-floorplan"><img src="images/venue-map.webp" alt="Venue map showing Guo Shide Lecture Hall (891S3), Hooke Creative Classroom (891S1), meeting room 89111, and restrooms." loading="lazy" decoding="async" width="2048" height="1365"/></figure>
 </div>
 </section>
 <!-- ===================== INFORMATION ===================== -->
